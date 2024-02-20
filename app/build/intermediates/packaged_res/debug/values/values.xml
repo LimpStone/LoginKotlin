@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">prueba</string>
+    <string name="gcm_defaultSenderId" translatable="false">1829894124</string>
+    <string name="google_api_key" translatable="false">AIzaSyC1iuDWjmT_ZbLQbcxeVh5MQ4R6ZflcxeM</string>
+    <string name="google_app_id" translatable="false">1:1829894124:android:f9dc17e13d8c47d21372c9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC1iuDWjmT_ZbLQbcxeVh5MQ4R6ZflcxeM</string>
+    <string name="google_storage_bucket" translatable="false">movies-6dbc7.appspot.com</string>
+    <string name="project_id" translatable="false">movies-6dbc7</string>
+    <style name="Base.Theme.Prueba" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Prueba" parent="Base.Theme.Prueba"/>
+</resources>
