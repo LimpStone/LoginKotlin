@@ -14,9 +14,9 @@ class PelisAdapter(private val contex:Activity,private val arrayList: ArrayList<
         val inflater: LayoutInflater = LayoutInflater.from(contex)
         var view: View = inflater.inflate(R.layout.item,null)
 
-        view.findViewById<TextView>(R.id.Name).text = arrayList(position).nombre
-        view.findViewById<TextView>(R.id.Realese).text = arrayList(position).realese
-        view.findViewById<TextView>(R.id.Type).text = arrayList(position).genero
+        view.findViewById<TextView>(R.id.Name).text = arrayList[position].nombre
+        view.findViewById<TextView>(R.id.Realese).text = arrayList[position].realese
+        view.findViewById<TextView>(R.id.Type).text = arrayList[position].genero
         return view
     }
 
