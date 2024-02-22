@@ -28,19 +28,19 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Name" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/Realese"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Release" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/Type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Type" />

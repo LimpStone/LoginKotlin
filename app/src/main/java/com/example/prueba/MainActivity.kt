@@ -24,9 +24,8 @@ class MainActivity : AppCompatActivity() {
        // "hentaimaster@lolilov.com" "UWUOWOAWA"
         auth = Firebase.auth
         btnLogin.setOnClickListener{
-            if (email != null && password != null){
-                Toast.makeText(this,email.toString(),Toast.LENGTH_LONG).show()
-                auth.signInWithEmailAndPassword(email.toString(),password.toString()).addOnCompleteListener {
+            if (email.text.toString() != "" && password.text.toString() != ""){
+                auth.signInWithEmailAndPassword(email.text.toString(),password.text.toString()).addOnCompleteListener {
                         task->
                     if (task.isSuccessful){
                         Toast.makeText(this,"Logged in",Toast.LENGTH_LONG).show()
