@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 
 class PelisAdapter(private val contex:Activity,private val arrayList: ArrayList<Pelis>)
     :ArrayAdapter<Pelis>(contex,R.layout.item,arrayList){
@@ -18,6 +20,10 @@ class PelisAdapter(private val contex:Activity,private val arrayList: ArrayList<
         view.findViewById<TextView>(R.id.Realese).text = arrayList[position].realese
         view.findViewById<TextView>(R.id.Type).text = arrayList[position].genero
         return view
+
+        if(arrayList[position].genero == "terror"){
+            //view.findViewById<ImageView>(R.id.imagen).setImageDrawable(ContextCompat.getDrawable(contex,R.drawable.terror))
+        }
     }
 
 
