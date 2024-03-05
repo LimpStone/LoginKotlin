@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imagen"
+        android:id="@+id/imgDet"
         android:layout_width="239dp"
         android:layout_height="199dp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
@@ -26,12 +26,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagen">
+        app:layout_constraintTop_toBottomOf="@+id/imgDet">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Title"
             android:textSize="20sp" />
 
@@ -40,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:gravity="center"
             android:inputType="text"
             android:text="Name of the movie" />
 
@@ -47,6 +49,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Realese"
             android:textSize="20sp" />
 
@@ -55,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:gravity="center"
             android:inputType="text"
             android:text="Realese of the movie" />
 
@@ -62,6 +66,7 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Type"
             android:textSize="20sp" />
 
@@ -70,6 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:gravity="center"
             android:inputType="text"
             android:text="Type of the movie" />
 

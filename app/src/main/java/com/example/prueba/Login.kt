@@ -13,6 +13,7 @@ import android.widget.ListView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
@@ -91,6 +92,11 @@ class Login : AppCompatActivity() {
             }
 
         })
+        val btnAgregar = findViewById<FloatingActionButton>(R.id.AddBtn)
+
+        btnAgregar.setOnClickListener {
+            startActivity(Intent(this, AddMov::class.java))
+        }
         fun llenalista()
         {
             val adaptador = PelisAdapter(this,pelicuas)

@@ -23,14 +23,14 @@ class PelisAdapter(private val contex:Activity,private val arrayList: ArrayList<
 
         if(arrayList[position].genero == "terror")
         {
-            view.findViewById<ImageView>(R.id.imagen).setImageDrawable(ContextCompat.getDrawable(contex, R.drawable.ecchi))
+            view.findViewById<ImageView>(R.id.ImgItm).setImageDrawable(ContextCompat.getDrawable(contex, R.drawable.ecchi))
         }
         else if(arrayList[position].genero == "comedia")
         {
-            view.findViewById<ImageView>(R.id.imagen).setImageDrawable(ContextCompat.getDrawable(contex, R.drawable.funny))
+            view.findViewById<ImageView>(R.id.ImgItm).setImageDrawable(ContextCompat.getDrawable(contex, R.drawable.funny))
         }
         else {
-            view.findViewById<ImageView>(R.id.imagen).setImageDrawable(ContextCompat.getDrawable(contex, R.drawable.nice))
+            view.findViewById<ImageView>(R.id.ImgItm).setImageDrawable(ContextCompat.getDrawable(contex, R.drawable.nice))
         }
         return view
     }
