@@ -26,7 +26,7 @@ class Login : AppCompatActivity() {
     lateinit var pelicuas: ArrayList<Pelis>
     private lateinit var auth: FirebaseAuth
     val database = Firebase.database
-    val myRef = database.getReference("Peliculas")
+    val myRef = database.getReference("Pelicula")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -38,8 +38,6 @@ class Login : AppCompatActivity() {
         var lista = findViewById<ListView>(R.id.lista)
         lista.setOnItemClickListener{
                 parent , view, position, id ->
-
-
             startActivity(Intent(this, Detalle::class.java)
                 .putExtra("id",pelicuas[position].id)
                 .putExtra("nombre",pelicuas[position].nombre)
@@ -85,6 +83,7 @@ class Login : AppCompatActivity() {
                     var pelicula: Pelis = Pelis(hijo.child("nombre").toString(),hijo.child("genero").toString(),hijo.child("realese").toString(), hijo.key.toString())
                     pelicuas.add(pelicula)
                 }
+                llenalista()
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -97,12 +96,13 @@ class Login : AppCompatActivity() {
         btnAgregar.setOnClickListener {
             startActivity(Intent(this, AddMov::class.java))
         }
-        fun llenalista()
-        {
-            val adaptador = PelisAdapter(this,pelicuas)
-            var lista = findViewById<ListView>(R.id.lista)
-            lista.adapter = adaptador
-        }
+
+    }
+    fun llenalista()
+    {
+        val adaptador = PelisAdapter(this,pelicuas)
+        var lista = findViewById<ListView>(R.id.lista)
+        lista.adapter = adaptador
     }
     override fun onKeyDown(keyCode: Int, event:KeyEvent?): Boolean{
 

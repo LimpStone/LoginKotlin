@@ -9,7 +9,7 @@ import com.google.firebase.Firebase
 import com.google.firebase.database.database
 class AddMov : AppCompatActivity()  {
     val database = Firebase.database
-    val myRef = database.getReference("Peliculas")
+    val myRef = database.getReference("Pelicula")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add)
