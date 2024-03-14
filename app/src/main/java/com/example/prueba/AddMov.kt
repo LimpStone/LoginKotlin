@@ -18,7 +18,7 @@ class AddMov : AppCompatActivity()  {
         var genero = findViewById<EditText>(R.id.AddGender)
         var anio = findViewById<EditText>(R.id.AddRealese)
         var agregar = findViewById<Button>(R.id.agregar_peli)
-
+        /*
         agregar.setOnClickListener {
             var pelicula = PelisCampos(nombre.text.toString(), genero.text.toString(), anio.text.toString())
             myRef.push().setValue(pelicula).addOnCompleteListener{
@@ -33,7 +33,7 @@ class AddMov : AppCompatActivity()  {
                     Toast.makeText(this,"Error"+task.exception!!.message.toString(), Toast.LENGTH_LONG).show()
                 }
             }
-        }
+        }*/
 
     }
 }

@@ -10,6 +10,7 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.ListView
+import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.MenuHost
 import androidx.core.view.MenuProvider
@@ -80,7 +81,10 @@ class Login : AppCompatActivity() {
 
                 snapshot.children.forEach{
                         hijo ->
-                    var pelicula: Pelis = Pelis(hijo.child("nombre").toString(),hijo.child("genero").toString(),hijo.child("realese").toString(), hijo.key.toString())
+                    var pelicula: Pelis = Pelis("Title: "+hijo.child("nombre").value.toString()
+                        ,"Type: "+hijo.child("genero").value.toString(),
+                        "Realese: "+hijo.child("realese").value.toString(),
+                        hijo.key.toString())
                     pelicuas.add(pelicula)
                 }
                 llenalista()
@@ -94,7 +98,8 @@ class Login : AppCompatActivity() {
         val btnAgregar = findViewById<FloatingActionButton>(R.id.AddBtn)
 
         btnAgregar.setOnClickListener {
-            startActivity(Intent(this, AddMov::class.java))
+            Toast.makeText(this,"suma", Toast.LENGTH_LONG).show()
+            startActivity(Intent(this,AddMov::class.java))
         }
 
     }

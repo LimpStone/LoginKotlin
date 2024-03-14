@@ -31,11 +31,11 @@ class Detalle: AppCompatActivity() {
         gender.setText(parametros?.getCharSequence("genero").toString())
         anio.setText(parametros?.getCharSequence("anio").toString())
 
-        if(parametros?.getCharSequence("genero") == "terror")
+        if(parametros?.getCharSequence("genero") == "ecchi")
         {
             imagn.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ecchi))
         }
-        else if(parametros?.getCharSequence("genero") == "comedia")
+        else if(parametros?.getCharSequence("genero") == "hentai")
         {
             imagn.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.nice))
         }
