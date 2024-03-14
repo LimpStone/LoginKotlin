@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddMov">
+
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="339dp"
+        android:layout_height="281dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:orientation="vertical"
@@ -17,29 +18,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Name" />
+
         <EditText
             android:id="@+id/AddName"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:ems="10"
-            android:inputType="text"
-            android:text="Name:" />
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Type" />
 
         <EditText
             android:id="@+id/AddGender"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:ems="10"
-            android:inputType="text"
-            android:text="Type:" />
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Realese" />
 
         <EditText
             android:id="@+id/AddRealese"
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:ems="10"
-            android:inputType="text"
-            android:text="Realese:" />
+            android:inputType="text" />
 
         <Button
             android:id="@+id/agregar_peli"

@@ -21,11 +21,11 @@ class PelisAdapter(private val contex:Activity,private val arrayList: ArrayList<
         view.findViewById<TextView>(R.id.Type).text = arrayList[position].genero
         return view
 
-        if(arrayList[position].genero == "terror")
+        if(arrayList[position].genero == "echhi")
         {
             view.findViewById<ImageView>(R.id.ImgItm).setImageDrawable(ContextCompat.getDrawable(contex, R.drawable.ecchi))
         }
-        else if(arrayList[position].genero == "comedia")
+        else if(arrayList[position].genero == "romcom")
         {
             view.findViewById<ImageView>(R.id.ImgItm).setImageDrawable(ContextCompat.getDrawable(contex, R.drawable.funny))
         }

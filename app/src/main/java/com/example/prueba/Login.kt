@@ -81,9 +81,9 @@ class Login : AppCompatActivity() {
 
                 snapshot.children.forEach{
                         hijo ->
-                    var pelicula: Pelis = Pelis("Title: "+hijo.child("nombre").value.toString()
-                        ,"Type: "+hijo.child("genero").value.toString(),
-                        "Realese: "+hijo.child("realese").value.toString(),
+                    var pelicula: Pelis = Pelis(hijo.child("nombre").value.toString()
+                        ,hijo.child("genero").value.toString(),
+                        hijo.child("realese").value.toString(),
                         hijo.key.toString())
                     pelicuas.add(pelicula)
                 }
